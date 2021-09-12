@@ -3,7 +3,7 @@ import jss from 'jss';
 import preset from 'jss-preset-default';
 import { Switch, Route } from 'react-router-dom';
 import styles from './styles';
-import Cards from './Cards';
+import Kanban from '../../pages/Kanban';
 
 jss.setup(preset());
 const { classes } = jss.createStyleSheet(styles).attach();
@@ -11,13 +11,13 @@ const { classes } = jss.createStyleSheet(styles).attach();
 function Main() {
   return (
     <div className={classes.main}>
-      {/* <Cards /> */}
       <Switch>
-        <Route path="/about">lorem1</Route>
-        <Route path="/users">lorem2</Route>
-        <Route path="/">
-          <Cards />
+        <Route path="/kanban">
+          <Kanban />
         </Route>
+        <Route path="/3">3rd page</Route>
+        <Route path="/4">4th page</Route>
+        <Route path="/">Home</Route>
       </Switch>
     </div>
   );

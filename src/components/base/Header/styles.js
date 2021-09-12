@@ -5,6 +5,7 @@ export default {
     color: '#fff',
   },
   logo: {
+    letterSpacing: '3px',
     fontSize: '30px',
     textTransform: 'uppercase',
   },

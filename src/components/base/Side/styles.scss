@@ -1,0 +1,33 @@
+$navbar-bg: #cbba7d;
+$p15: 15px;
+
+.side {
+  background: $navbar-bg;
+  width: 300px;
+  color: #fff;
+  padding: $p15;
+
+  & .ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  & .li {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: $p15;
+
+    & .a {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: $p15;
+      transition: .3s;
+      &:hover{
+        background-color: lighten($navbar-bg, 15%);
+      }
+    }
+  }
+}

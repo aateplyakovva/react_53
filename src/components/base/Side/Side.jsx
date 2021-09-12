@@ -1,29 +1,29 @@
 import React from 'react';
-import jss from 'jss';
-import preset from 'jss-preset-default';
 import { Link } from 'react-router-dom';
-import styles from './styles';
-
-jss.setup(preset());
-const { classes } = jss.createStyleSheet(styles).attach();
+import styles from './styles.scss';
 
 function Side() {
   return (
-    <div className={classes.side}>
-      <ul className={classes.ul}>
-        <li className={classes.li}>
-          <Link className={classes.a} to="/">
+    <div className={styles.side}>
+      <ul className={styles.ul}>
+        <li className={styles.li}>
+          <Link className={styles.a} to="/">
+            Home
+          </Link>
+        </li>
+        <li className={styles.li}>
+          <Link className={styles.a} to="/kanban">
             Kanban board
           </Link>
         </li>
-        <li className={classes.li}>
-          <Link className={classes.a} to="/about">
-            About
+        <li className={styles.li}>
+          <Link className={styles.a} to="/3">
+            3rd page
           </Link>
         </li>
-        <li className={classes.li}>
-          <Link className={classes.a} to="/users">
-            Users
+        <li className={styles.li}>
+          <Link className={styles.a} to="/4">
+            4th page
           </Link>
         </li>
       </ul>

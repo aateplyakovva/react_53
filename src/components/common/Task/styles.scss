@@ -1,0 +1,26 @@
+$background-color: #edece6;
+$p5: 5px;
+
+.task {
+    width: 90%;
+    background-color: $background-color;
+    border-radius: $p5;
+    padding: $p5;
+    margin: 10px auto $p5;
+    &:last-child { 
+      margin-bottom: 0;
+    }
+    .header{
+      display: flex;
+      justify-content: space-between;
+
+      .img{
+        cursor: pointer;
+        width: 15px;
+        &:not(:first-child){
+          margin-left: $p5;
+        }
+      }
+      
+    }
+  }

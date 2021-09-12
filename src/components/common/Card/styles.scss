@@ -1,0 +1,58 @@
+$background-color: #dbd9d0;
+$pink: #f5269c;
+$orange: #f5b527;
+$blue: #6627f5;
+$green: #27f580;
+$color-thumb: #cfceca;
+$color-thumb-hover: #9b9a98de;
+$fw-bold: 700;
+
+.card {
+    width: 22%;
+    border-radius: 0 0 7px 7px;
+    background-color: $background-color;
+    height: 60vh;
+    overflow: hidden;
+    &:nth-child(1) {
+      border-top: 4px solid $pink;
+    }
+    &:nth-child(2) {
+      border-top: 4px solid $orange;
+    }
+    &:nth-child(3) {
+      border-top: 4px solid $blue;
+    }
+    &:nth-child(4) {
+      border-top: 4px solid $green;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $color-thumb;
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: $color-thumb-hover;
+  }
+
+  & .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    font-weight: $fw-bold;
+  }
+
+  & .section {
+    overflow-y: auto;
+    height: calc(100% - 43px);
+  }
+}

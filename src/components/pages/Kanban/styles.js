@@ -1,5 +1,5 @@
 export default {
-  cards: {
+  kanban: {
     display: 'flex',
     justifyContent: 'space-around',
     backgroundColor: '#edece6',
